@@ -23,13 +23,13 @@
     <title>PHP Dischi</title>
 </head>
 <body >
-    <?php include_once __DIR__ . '/server/data.php';?>
+    <!-- <?php include_once __DIR__ . '/server/data.php';?> -->
     <?php include_once __DIR__ . '/partials/header.php';?>
 
     <main id="app">
         <section class="container">
             <div class="row">
-                <!-- <div class="col-4">
+                <div class="col-4">
                     <div class="card" style="width: 18rem;" v-for="character in characters">
                         <img :src="character.image" class="card-img-top" :alt="character.name">
                         <div class="card-body">
@@ -37,8 +37,8 @@
                                 <p class="card-text">{{character.species}}</p>
                         </div>
                     </div>
-                </div> -->
-                <?php foreach($characters as $character) {?>
+                </div>
+                <!-- <?php foreach($characters as $character) {?>
                     <div class="col-4">
                         
                         <div class="card" style="width: 18rem;">
@@ -49,7 +49,7 @@
                             </div>
                         </div> 
                     </div>
-                <?php }?>
+                <?php }?> -->
             </div>
         </section>
     </main>
