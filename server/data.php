@@ -1,5 +1,4 @@
 <?php 
-
     $characters =[
         [
             'name' => 'Rick Sanchez',
@@ -62,34 +61,4 @@
             'image' => 'https://rickandmortyapi.com/api/character/avatar/15.jpeg', 
         ],
     ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ?>

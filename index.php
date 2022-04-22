@@ -22,20 +22,48 @@
 
     <title>PHP Dischi</title>
 </head>
-<body id="app">
-
+<body >
+    <?php include_once __DIR__ . '/server/data.php';?>
     <?php include_once __DIR__ . '/partials/header.php';?>
 
-    <main>MAINMAIN</main>
+    <main id="app">
+        <section class="container">
+            <div class="row">
+                <!-- <div class="col-4">
+                    <div class="card" style="width: 18rem;" v-for="character in characters">
+                        <img :src="character.image" class="card-img-top" :alt="character.name">
+                        <div class="card-body">
+                                <h5 class="card-title">{{character.name}}</h5>
+                                <p class="card-text">{{character.species}}</p>
+                        </div>
+                    </div>
+                </div> -->
+                <?php foreach($characters as $character) {?>
+                    <div class="col-4">
+                        
+                        <div class="card" style="width: 18rem;">
+                            <img src="<? echo $character['image'];?>" class="card-img-top" alt="<? echo $character['name']?>">
+                            <div class="card-body">
+                                    <h5 class="card-title"><?php echo $character['name']?></h5>
+                                    <p class="card-text"><?php echo $character['species']?></p>
+                            </div>
+                        </div> 
+                    </div>
+                <?php }?>
+            </div>
+        </section>
+    </main>
 
     <?php include_once __DIR__ . '/partials/footer.php';?>
 
 
     <!-- Vue.js -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script> -->
+
     <!-- Javascript -->
     <script type = "text/javascript" src="js/script.js"></script>
     <!-- Axios -->
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </body>
 </html>
