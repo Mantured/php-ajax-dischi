@@ -1,6 +1,6 @@
 <?php 
 
-include_once __DIR__ . '/data.php';
+include_once __DIR__ . '/../database/db.php';
 header('Content-Type: application/json');
 
 /* intanto facciamolo secco */
@@ -12,4 +12,5 @@ echo json_encode(
     ]
 )
 
+/* lo scopo di controller é di esporre i dati del db tramite js, fa da ponte */
 ?>

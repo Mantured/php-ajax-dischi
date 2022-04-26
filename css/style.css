@@ -1,0 +1,38 @@
+main {
+  background-color: rgb(20, 40, 53);
+}
+
+#nav-header,
+footer {
+  height: 10vh;
+  background-color: #f6f6f6;
+}
+
+/* #nav-header {
+  margin-bottom: 2rem;
+} */
+
+#nav-header img {
+  height: 100%;
+}
+#nav-header div.col-3 a {
+  color: steelblue;
+}
+
+main .row {
+  height: 80vh;
+}
+
+.card {
+  background-color: rgb(57, 255, 20);
+}
+.card .card-body {
+  background-color: rgb(0, 100, 0);
+  color: whitesmoke;
+  text-align: center;
+}
+
+footer img {
+  height: 100%;
+  transform: rotate(180deg);
+}
